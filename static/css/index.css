@@ -1,0 +1,15 @@
+h2 {
+    color: greenyellow;
+}
+td,th{
+    width: 100px;
+    height: 30px;
+    border: solid 2px black;
+    text-align: center;
+    mso-cellspacing: 0px;
+}
+table{
+    mso-cellspacing: 0;
+    empty-cells: hide;
+    border-collapse: collapse;
+}

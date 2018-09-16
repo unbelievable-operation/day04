@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>hello Django</title>
+{#        {% load  static %}#}
+{#        <link rel="stylesheet" href="{% static 'css/index.css' %}">#}
+        <link rel="stylesheet" href="/static/css/index.css">
+
+	</head>
+	<body>
+        <h2>ni hao hello</h2>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>姓名</th>
+                <th>年龄</th>
+            </thead>
+            <tbody>
+                {% for stu in students %}
+                    <tr>
+                        <td>{{ stu.id }}</td>
+                        <td {% ifequal stu.id 2 %} style="color: chartreuse; text-align: left" {% endifequal %}>
+                            {{ stu.s_name }}
+                        </td>
+                        <td>{{ stu.s_age }}</td>
+                    </tr>
+                 {% endfor %}
+            </tbody>
+
+
+
+        </table>
+
+
+	</body>
+</html>
